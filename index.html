@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronograma de Viagem - Curitiba a Recife</title>
+    <!-- Importação do CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Biblioteca Chart.js para geração dos gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>✈️ Cronograma de Viagem: Curitiba ➔ Recife</h1>
+            <p>Projeto de Gestão Financeira e Tecnologia - 1º Ano do Ensino Médio</p>
+        </header>
+
+        <main>
+            <!-- Seção com a tabela de dados -->
+            <section class="card">
+                <h2>📊 Tabela de Custos</h2>
+                <div class="table-responsive">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Preço Unitário</th>
+                                <th>Quantidade</th>
+                                <th>Valor Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Passagem de avião</td>
+                                <td>R$ 1.300,00</td>
+                                <td>1</td>
+                                <td>R$ 1.300,00</td>
+                            </tr>
+                            <tr>
+                                <td>Hospedagem</td>
+                                <td>R$ 200,00</td>
+                                <td>5</td>
+                                <td>R$ 1.000,00</td>
+                            </tr>
+                            <tr>
+                                <td>Alimentação</td>
+                                <td>R$ 100,00</td>
+                                <td>5</td>
+                                <td>R$ 500,00</td>
+                            </tr>
+                            <tr>
+                                <td>Transporte</td>
+                                <td>R$ 50,00</td>
+                                <td>3</td>
+                                <td>R$ 150,00</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-right"><strong>Total Geral:</strong></td>
+                                <td class="total-highlight">R$ 2.950,00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Seção dos gráficos -->
+            <section class="card grid-charts">
+                <div class="chart-box">
+                    <h3>Gastos por Categoria (Barras)</h3>
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Distribuição do Orçamento (Rosca)</h3>
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Desenvolvido como projeto escolar de Tecnologia e Matemática Aplicada.</p>
+        </footer>
+    </div>
+
+    <!-- Importação do JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
