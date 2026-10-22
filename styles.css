@@ -1,0 +1,122 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #bdc3c7;
+}
+
+/* Cards (Contêineres) */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 8px;
+}
+
+/* Tabela Estilizada */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #4a69bd;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+tr:hover {
+    background-color: #f1f2f6;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.total-highlight {
+    font-weight: bold;
+    color: #27ae60;
+    font-size: 1.1rem;
+}
+
+/* Gráficos em Lado a Lado */
+.grid-charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.chart-box {
+    text-align: center;
+}
+
+.chart-box h3 {
+    font-size: 1.1rem;
+    color: #57606f;
+    margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
